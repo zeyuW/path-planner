@@ -1,0 +1,27 @@
+[project]
+name = "path-planner"
+version = "0.1.0"
+description = "Viewpoint and path planning for surface scanning"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cadquery-ocp>=7.8",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "PyYAML>=6.0",
+    "scikit-learn>=1.4",
+    "shapely>=2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["vp_planner*", "path_planner*"]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+]

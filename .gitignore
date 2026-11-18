@@ -1,0 +1,19 @@
+# Python 环境与缓存
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+
+# 构建产物
+build/
+dist/
+*.egg-info/
+*.spec
+
+# 敏感数据（不提交）
+data/
+
+# 运行生成的产物
+out/
+.tmp/
+.build_backup/
